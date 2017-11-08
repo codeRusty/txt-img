@@ -25,10 +25,10 @@ export * from './sample.service';
     SamplePipe
   ]
 })
-export class SampleModule {
+export class TxtImgModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: SampleModule,
+      ngModule: TxtImgModule,
       providers: [SampleService]
     };
   }
