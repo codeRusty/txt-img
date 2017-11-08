@@ -1,0 +1,28 @@
+{
+  "name": "txt-img",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeRusty/txt-img.git"
+  },
+  "author": {
+    "name": "Sourabh Rustagi",
+    "email": "sourabh.rustagi@hotmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeRusty/txt-img.git/issues"
+  },
+  "main": "txt-img.umd.js",
+  "module": "txt-img.js",
+  "jsnext:main": "txt-img.js",
+  "typings": "txt-img.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
