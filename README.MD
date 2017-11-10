@@ -6,7 +6,7 @@
 The AngularJS Component was developed for a reason where it was really important to render image instead of text on the fly.
 
 
-## Installation
+## Installationgit 
 
 To install this library, run:
 
