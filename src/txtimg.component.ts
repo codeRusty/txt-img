@@ -1,4 +1,5 @@
 import { Component, ViewChild, Input } from '@angular/core';
+import { CanvasContext2DType } from './extendedTypes';
 
 @Component({
   selector: 'txt-img',
@@ -15,11 +16,11 @@ export class TxtImgComponent {
   @Input('tcolor') tcolor: string = "White";
   @Input('tfont') tfont: string = "30px Comic Sans MS";
   @Input('tbackground') tbackground: string = "Black";
-  @Input('opacity') opacity: number = 0.9;
   @Input('align') align: string = "Center";
   @Input('top-margin') topMargin: number = 100;
   @Input('left-margin') leftMargin: number = 50;
   @Input('line-height') lineHeight: number = 30;
+  @Input('filter') filter: string = '';
 
   _rectColor: string = "#FF0000";
   _backgroundImage: HTMLImageElement = null;
@@ -92,7 +93,9 @@ export class TxtImgComponent {
     ctx.font = this.tfont;
     ctx.textAlign = this.align;
 
-    this.wrapText(ctx, this.content, this.leftMargin, this.topMargin, this.canvasW - (this.leftMargin *2 ), this.lineHeight);
+    this.wrapText(ctx, this.content, this.leftMargin, this.topMargin, this.canvasW - (this.leftMargin * 2), this.lineHeight);
+    ctx.filter = this.filter;
+
   }
 
 
@@ -119,5 +122,4 @@ export class TxtImgComponent {
   }
 
 }
-
 

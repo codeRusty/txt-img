@@ -1,9 +1,11 @@
 # txt-img
 
+The AngularJS Component was developed for a reason where it was really important to render image instead of text on the fly.
+
 ![alt text](https://docs.npmjs.com//images/npm.svg)
 
 
-The AngularJS Component was developed for a reason where it was really important to render image instead of text on the fly.
+
 
 
 ## Installationgit 
@@ -58,7 +60,17 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<txt-img width = 300 height = 300 tbackground="Green" tcolor="Yellow" action="TEXT" content="WoW!! Nice to See this wrapped text as Image" tfont="30px helvetica"></txt-img>
+<txt-img 
+  width = 300 
+  height = 300 
+  tbackground="Green" 
+  left-margin=70 
+  tcolor="Yellow" 
+  action="TEXT" 
+  filter= "blur(1px)grayscale(20)"
+  content="Nice to see this text wrapped as Image" 
+  tfont="30px Times New Roman">
+</txt-img>
 ```
 
 ## Component API
@@ -66,6 +78,8 @@ Once your library is imported, you can use its components, directives and pipes 
 ```xml
 
 selector : txt-img
+
+  Properties                  Default               values
 
 height: number      | default:200                 | any number
 width : number      | default:200                 | any number
@@ -75,10 +89,11 @@ content : string    | default: Hello World        | .....any text....
 left-margin:number  | default: 50                 | 50
 top-margin : number | default: 50                 | margin from top for text content
 line-height:number  | default: 30                 | 50
-opacity:number      | default: 0.9                | 0.5
 tbackground:string  | default: Black              | (color/URL) color string or a URL of an Image 
-tcolor : string     | default: Black              |Color of the Text
+tcolor : string     | default: Black              | Color of the Text
 tfont : string      | default: 30px Comic Sans MS | Font of the Text
+
+filter: string      | default: ''                 | 'blur(5px)grayscale(20)' | All Css filters supported
 
 ```
 
