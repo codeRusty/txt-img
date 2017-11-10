@@ -1,5 +1,11 @@
 # txt-img
 
+![alt text](https://docs.npmjs.com//images/npm.svg)
+
+
+The AngularJS Component was developed for a reason where it was really important to render image instead of text on the fly.
+
+
 ## Installation
 
 To install this library, run:
@@ -10,7 +16,7 @@ $ npm install txt-img --save
 
 ## Consuming your library
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
+You can import your library in any Angular application by running:
 
 ```bash
 $ npm install txt-img
@@ -25,7 +31,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'txt-img';
+import { TxtImgModule } from 'txt-img';
 
 @NgModule({
   declarations: [
@@ -33,8 +39,10 @@ import { SampleModule } from 'txt-img';
   ],
   imports: [
     BrowserModule,
-
+    
+    TxtImgModule
     // Specify your library as an import
+    
     LibraryModule
   ],
   providers: [],
@@ -52,6 +60,28 @@ Once your library is imported, you can use its components, directives and pipes 
 </h1>
 <txt-img width = 300 height = 300 tbackground="Green" tcolor="Yellow" action="TEXT" content="WoW!! Nice to See this wrapped text as Image" tfont="30px helvetica"></txt-img>
 ```
+
+## Component API
+
+```xml
+
+selector : txt-img
+
+height: number      | default:200                 | any number
+width : number      | default:200                 | any number
+action : string     | default: TEXT               | TEXT 
+align: string       | default: Center             | Center, left, right
+content : string    | default: Hello World        | .....any text....
+left-margin:number  | default: 50                 | 50
+top-margin : number | default: 50                 | margin from top for text content
+line-height:number  | default: 30                 | 50
+opacity:number      | default: 0.9                | 0.5
+tbackground:string  | default: Black              | (color/URL) color string or a URL of an Image 
+tcolor : string     | default: Black              |Color of the Text
+tfont : string      | default: 30px Comic Sans MS | Font of the Text
+
+```
+
 
 ## Development
 

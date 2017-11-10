@@ -92,7 +92,7 @@ export class TxtImgComponent {
     ctx.font = this.tfont;
     ctx.textAlign = this.align;
 
-    this.wrapText(ctx, this.content, this.leftMargin, this.topMargin, this.canvasW - this.leftMargin, this.lineHeight);
+    this.wrapText(ctx, this.content, this.leftMargin, this.topMargin, this.canvasW - (this.leftMargin *2 ), this.lineHeight);
   }
 
 

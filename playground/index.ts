@@ -10,7 +10,7 @@ import { TxtImgModule }  from 'txt-img';
 
 @Component({
   selector: 'app',
-  template: `<txt-img width = 300 height = 300 tbackground="Green" tcolor="Yellow" action="TEXT" content="WoW!! Nice to See this wrapped text as Image" tfont="30px helvetica"></txt-img>`
+  template: `<txt-img width = 300 height = 300 tbackground="Black" tcolor="Yellow" action="TEXT" content="WoW!! Nice to See this wrapped text as Image" tfont="30px Times New Roman"></txt-img>`
 })
 class AppComponent {}
 
