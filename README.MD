@@ -1,10 +1,10 @@
 # txt-img
 
+![text](https://img.shields.io/github/commits/google/skia/last.svg)
+
 The AngularJS Component was developed for a reason where it was really important to render image instead of text on the fly.
 
 You can also use this package to convert from text to image and then save it.
-
-![alt text](https://docs.npmjs.com//images/npm.svg)
 
 
 ## Installation
