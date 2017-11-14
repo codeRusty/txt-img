@@ -66,17 +66,17 @@
 <path fill="none" stroke="#000000" stroke-dasharray="1,5" d="M248,-187.1061C248,-187.1061 248,-205.991 248,-205.991"/>
 <polygon fill="#000000" stroke="#000000" points="244.5001,-205.9909 248,-215.991 251.5001,-205.991 244.5001,-205.9909"/>
 </g>
-<!-- SampleModule -->
+<!-- TxtImgModule -->
 <g id="node3" class="node">
-<title>SampleModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="233.5438,-122 230.5438,-126 209.5438,-126 206.5438,-122 132.4562,-122 132.4562,-86 233.5438,-86 233.5438,-122"/>
-<text text-anchor="middle" x="183" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">SampleModule</text>
+<title>TxtImgModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="233.5452,-122 230.5452,-126 209.5452,-126 206.5452,-122 132.4548,-122 132.4548,-86 233.5452,-86 233.5452,-122"/>
+<text text-anchor="middle" x="183" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">TxtImgModule</text>
 </g>
-<!-- SampleModule&#45;&gt;AppModule -->
+<!-- TxtImgModule&#45;&gt;AppModule -->
 <g id="edge2" class="edge">
-<title>SampleModule&#45;&gt;AppModule</title>
-<path fill="none" stroke="#000000" d="M219.9716,-122.1061C219.9716,-122.1061 219.9716,-140.991 219.9716,-140.991"/>
-<polygon fill="#000000" stroke="#000000" points="216.4717,-140.9909 219.9716,-150.991 223.4717,-140.991 216.4717,-140.9909"/>
+<title>TxtImgModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M219.972,-122.1061C219.972,-122.1061 219.972,-140.991 219.972,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="216.472,-140.9909 219.972,-150.991 223.472,-140.991 216.472,-140.9909"/>
 </g>
 </g>
 </svg>

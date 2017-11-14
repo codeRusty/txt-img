@@ -68,7 +68,7 @@
                                     <a href="../modules/AppModule.html" >AppModule</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../modules/SampleModule.html" >SampleModule</a>
+                                    <a href="../modules/TxtImgModule.html" >TxtImgModule</a>
                                 </li>
                         </ul>
                     </li>
@@ -93,46 +93,24 @@
                         </ul>
                     </li>
             
+            
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse"
-                                data-target="#xs-directives-links"
+                                data-target="#xs-classes-links"
                             >
-                            <span class="fa fa-code"></span>
-                            <span>Directives</span>
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
                             <span class="fa fa-angle-down"></span>
                         </div>
                         <ul class="links collapse "
-                                id="xs-directives-links"
+                                id="xs-classes-links"
                             >
                                 <li class="link">
-                                    <a href="../directives/SampleDirective.html" >SampleDirective</a>
+                                    <a href="../classes/CanvasContext2DType.html" >CanvasContext2DType</a>
                                 </li>
                         </ul>
                     </li>
             
-            
-                    <li class="chapter">
-                        <div class="simple menu-toggler" data-toggle="collapse"
-                                data-target="#xs-injectables-links"
-                            >
-                            <span class="fa fa-long-arrow-down"></span>
-                            <span>Injectables</span>
-                            <span class="fa fa-angle-down"></span>
-                        </div>
-                        <ul class="links collapse "
-                                id="xs-injectables-links"
-                            >
-                                <li class="link">
-                                    <a href="../injectables/SamplePipe.html" >SamplePipe</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../injectables/SamplePipe.html" >SamplePipe</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../injectables/SampleService.html" >SampleService</a>
-                                </li>
-                        </ul>
-                    </li>
             
             
             
@@ -201,7 +179,7 @@
                                            <a href="../modules/AppModule.html" >AppModule</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../modules/SampleModule.html" >SampleModule</a>
+                                           <a href="../modules/TxtImgModule.html" >TxtImgModule</a>
                                        </li>
                                </ul>
                            </li>
@@ -226,46 +204,24 @@
                                </ul>
                            </li>
                    
+                   
                            <li class="chapter">
                                <div class="simple menu-toggler" data-toggle="collapse"
-                                       data-target="#directives-links"
+                                       data-target="#classes-links"
                    >
-                                   <span class="fa fa-code"></span>
-                                   <span>Directives</span>
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
                                    <span class="fa fa-angle-down"></span>
                                </div>
                                <ul class="links collapse "
-                                       id="directives-links"
+                                       id="classes-links"
                    >
                                        <li class="link">
-                                           <a href="../directives/SampleDirective.html" >SampleDirective</a>
+                                           <a href="../classes/CanvasContext2DType.html" >CanvasContext2DType</a>
                                        </li>
                                </ul>
                            </li>
                    
-                   
-                           <li class="chapter">
-                               <div class="simple menu-toggler" data-toggle="collapse"
-                                       data-target="#injectables-links"
-                   >
-                                   <span class="fa fa-long-arrow-down"></span>
-                                   <span>Injectables</span>
-                                   <span class="fa fa-angle-down"></span>
-                               </div>
-                               <ul class="links collapse "
-                                       id="injectables-links"
-                   >
-                                       <li class="link">
-                                           <a href="../injectables/SamplePipe.html" >SamplePipe</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../injectables/SamplePipe.html" >SamplePipe</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../injectables/SampleService.html" >SampleService</a>
-                                       </li>
-                               </ul>
-                           </li>
                    
                    
                    
@@ -364,18 +320,27 @@ import { NgModule } from &#x27;@angular/core&#x27;;
 import { Component } from &#x27;@angular/core&#x27;;
 import { platformBrowserDynamic } from &#x27;@angular/platform-browser-dynamic&#x27;;
 
-import { SampleModule }  from &#x27;txt-img&#x27;;
+import { TxtImgModule }  from &#x27;txt-img&#x27;;
 
 @Component({
   selector: &#x27;app&#x27;,
-  template: &#x60;&lt;txt-img width &#x3D; 300 height &#x3D; 500 tbackground&#x3D;&quot;Green&quot; tcolor&#x3D;&quot;Yellow&quot; action&#x3D;&quot;TEXT&quot; content&#x3D;&quot;Circle This is amszing and i love it &quot; tfont&#x3D;&quot;30px helvetica&quot;&gt;&lt;/txt-img&gt;&#x60;
+  template: &#x60;&lt;txt-img 
+  width &#x3D; 300 
+  height &#x3D; 300 
+  tbackground&#x3D;&quot;Green&quot; 
+  left-margin&#x3D;70 
+  tcolor&#x3D;&quot;Yellow&quot; 
+  action&#x3D;&quot;TEXT&quot; 
+  filter&#x3D; &quot;grayscale(20)&quot;
+  content&#x3D;&quot;Nice to see this text wrapped as Image&quot; 
+  tfont&#x3D;&quot;30px Times New Roman&quot;&gt;&lt;/txt-img&gt;&#x60;
 })
 class AppComponent {}
 
 @NgModule({
   bootstrap: [ AppComponent ],
   declarations: [ AppComponent ],
-  imports: [ BrowserModule, SampleModule ]
+  imports: [ BrowserModule, TxtImgModule ]
 })
 class AppModule {}
 
@@ -409,7 +374,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 <script>
         var COMPONENT_TEMPLATE = '<div></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app'},{'name': 'TxtImgComponent', 'selector': 'txt-img'}];
-    var DIRECTIVES = [{'name': 'SampleDirective', 'selector': '[sampleDirective]'}];
+    var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>
 <script src="../js/tree.js"></script>
