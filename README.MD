@@ -7,8 +7,7 @@ You can also use this package to convert from text to image and then save it.
 ![alt text](https://docs.npmjs.com//images/npm.svg)
 
 
-
-## Installationgit 
+## Installation
 
 To install this library, run:
 
@@ -98,6 +97,18 @@ filter: string      | default: ''                 | 'blur(5px)grayscale(20)' | A
 ```
 
 
+
+
+## Issues
+
+Please report bugs and issues [here](https://github.com/codeRusty/txt-img/issues).
+
+
+## Docs
+
+Get a complete detail [here](https://coderusty.github.io/txt-img/)
+
+
 ## Development
 
 To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
@@ -111,6 +122,13 @@ To lint all `*.ts` files:
 ```bash
 $ npm run lint
 ```
+
+## Change log
+
+### v0.2.1
+
+- Working filters
+
 
 ## License
 
