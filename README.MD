@@ -72,29 +72,27 @@ Once your library is imported, you can use its components, directives and pipes 
 </txt-img>
 ```
 
-## Component API
-
-```xml
+## Component 
 
 selector : txt-img
 
-  Properties                  Default               values
 
-height: number      | default:200                 | any number
-width : number      | default:200                 | any number
-action : string     | default: TEXT               | TEXT 
-align: string       | default: Center             | Center, left, right
-content : string    | default: Hello World        | .....any text....
-left-margin:number  | default: 50                 | 50
-top-margin : number | default: 50                 | margin from top for text content
-line-height:number  | default: 30                 | 50
-tbackground:string  | default: Black              | (color/URL) color string or a URL of an Image 
-tcolor : string     | default: Black              | Color of the Text
-tfont : string      | default: 30px Comic Sans MS | Font of the Text
+## Configurable options available 
 
-filter: string      | default: ''                 | 'blur(5px)grayscale(20)' | All Css filters supported
-
-```
+| Key                 | Default Value               | Use                                                                 |
+| --------------------|:----------------------------| :-------------------------------------------------------------------|
+| height: number      | default:200                 | any number                                                          |
+| width : number      | default:200                 | any number                                                          |
+| action : string     | default: TEXT               | TEXT                                                                |
+| align: string       | default: Center             | Center, left, right                                                 |
+| content : string    | default: Hello World        | .....any text....                                                   |
+| left-margin:number  | default: 50                 | 50                                                                  |
+| top-margin : number | default: 50                 | margin from top for text content                                    |
+| line-height:number  | default: 30                 | 50                                                                  |
+| tbackground:string  | default: Black              | (color/URL) color string or a URL of an Image                       |
+| tcolor : string     | default: Black              | Color of the Text                                                   |
+| tfont : string      | default: 30px Comic Sans MS | Font of the Text                                                    |
+| filter: string      | default: ''                 | 'blur(5px)grayscale(20)' | All Css filters supported                |
 
 
 
