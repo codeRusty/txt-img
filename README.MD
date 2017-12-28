@@ -1,4 +1,4 @@
-# txt-img
+# txt-img [Deprecated]
 
 ![text](https://img.shields.io/github/commits/google/skia/last.svg)
 
